@@ -1,11 +1,9 @@
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.*;
-import java.nio.charset.Charset;
 import java.util.*;
 import java.util.concurrent.*;
-import com.google.common.base.Charsets;
-import com.google.common.io.Resources;
+
 public class FindDistance {
     public final static double AVERAGE_RADIUS_OF_EARTH_KM = 6371;
     public static void main(String[] args) throws IOException, InterruptedException, ExecutionException, TimeoutException {
@@ -154,7 +152,5 @@ public class FindDistance {
     }
 
 
-    public String readResource(final String fileName, Charset charset) throws IOException {
-        return Resources.toString(Resources.getResource(fileName), charset);
-    }
+
 }
